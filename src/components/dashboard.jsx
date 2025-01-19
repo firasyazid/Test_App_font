@@ -13,7 +13,7 @@ const Dashboard = () => {
        navigate("/");
     } else {
       axios
-        .get("http://127.0.0.1:8000/auth/users", {
+        .get("https://test-app-back.onrender.com/auth/users", {
           headers: {
             Authorization: `Bearer ${token}`,
           },
